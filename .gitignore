@@ -14,6 +14,6 @@ Thumbs.db
 
 .vscode/
 
-server/shared-local-isntance.db
+shared-local-isntance.db
 server/dynamodb-local-metadata.json
 shared-local-metadata.json
