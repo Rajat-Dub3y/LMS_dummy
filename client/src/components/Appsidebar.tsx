@@ -29,12 +29,18 @@ const Appsidebar = () => {
             {icon:Settings,label:"Setting",href:"/teacher/settings" }
         ]
     }
+    const studentlist=[
+        {icon:BookOpen,label:"Courses",href:"/user/courses" },
+        {icon:Briefcase,label:"Billing",href:"/user/billing" },
+        {icon:User,label:"Profile",href:"/user/profile" },
+        {icon:Settings,label:"Setting",href:"/user/settings" }
+    ]
 
     if(!isLoaded) return <Loading />
     if(!user) return <div>User not found</div>
 
-    const userType=(user.publicMetadata.userType as "student" | "teacher" ) 
-    const currentNavLinks=navLink[userType] || []
+    const userType=(user.publicMetadata.userType as "student" | "teacher" || "student" ) 
+    const currentNavLinks=navLink[userType] || studentlist
 
   return (
     <Sidebar
