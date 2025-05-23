@@ -39,6 +39,11 @@ app.use(clerkMiddleware());
 
 //Routes
 
+app.get("/", (req, res) => {
+  res.send("Hello from root route!");
+});
+
+
 app.use("/courses",courseRouter)
 app.use("/users/clerk",requireAuth(),userClerkRoutes)
 app.use("/transactions",requireAuth(),tarnsactionRoutes)
@@ -53,14 +58,14 @@ if(!isProduction){
 }
 
 const serverlessApp=serverless(app);
-export const handler=async(event:any,context:any)=>{
-    if(event.action === "seed"){
-        await seed();
-        return {
-            ststausCode:200,
-            body:JSON.stringify({message:"Data seeded successfully"}),
-        }
-    }else{
-        return serverless(event,context)
-    }
-}
+export const handler = async (event: any, context: any) => {
+  if (event.action === "seed") {
+    await seed();
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Data seeded successfully" }),
+    };
+  } else {
+    return serverlessApp(event, context);
+  }
+};
