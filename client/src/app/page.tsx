@@ -9,7 +9,6 @@ export default function Home() {
       <main className="nondashboard-layout__main">
         <Landing/>
       </main>
-      <h1>Hi</h1>
       <Footer/>
     </div>
   );
