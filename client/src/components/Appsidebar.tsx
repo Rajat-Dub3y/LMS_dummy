@@ -20,13 +20,11 @@ const Appsidebar = () => {
             {icon:BookOpen,label:"Courses",href:"/user/courses" },
             {icon:Briefcase,label:"Billing",href:"/user/billing" },
             {icon:User,label:"Profile",href:"/user/profile" },
-            {icon:Settings,label:"Setting",href:"/user/settings" }
         ],
         teacher:[
             {icon:BookOpen,label:"Courses",href:"/teacher/courses" },
             {icon:DollarSign,label:"Billing",href:"/teacher/billing" },
             {icon:User,label:"Profile",href:"/teacher/profile" },
-            {icon:Settings,label:"Setting",href:"/teacher/settings" }
         ]
     }
     const studentlist=[
