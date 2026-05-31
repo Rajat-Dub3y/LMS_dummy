@@ -1,5 +1,6 @@
 "use client"
 
+import type { Metadata } from "next";
 import React from 'react'
 import {motion} from "framer-motion"
 import Link from 'next/link'
@@ -11,6 +12,9 @@ import CourseCardSearch from '@/components/CourseCardSearch'
 import { useRouter } from 'next/navigation'
 import { useUser } from '@clerk/nextjs'
 
+export const metadata: Metadata = {
+  title: "Landing",
+};
 
 const LoadingSkeleton=()=>{
     return (

@@ -1,8 +1,12 @@
+import type { Metadata } from "next";
 import React from 'react'
 import Header from '@/components/Header'
 import { UserProfile } from '@clerk/nextjs'
 import { dark } from '@clerk/themes'
 
+export const metadata: Metadata = {
+  title: "Teacher Profile",
+};
 
 const TeacherProfilePage = () => {
   return (

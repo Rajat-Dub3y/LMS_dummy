@@ -1,5 +1,6 @@
 "use client";
 
+import type { Metadata } from "next";
 import Toolbar from "@/components/Toolbar";
 import CourseCard from "@/components/CourseCard";
 import { useGetUserEnrolledCoursesQuery } from "@/state/api";
@@ -8,6 +9,10 @@ import Header from "@/components/Header";
 import { useUser } from "@clerk/nextjs";
 import { useState, useMemo } from "react";
 import Loading from "@/components/Loading";
+
+export const metadata: Metadata = {
+  title: "My Courses",
+};
 
 const Courses = () => {
   const router = useRouter();

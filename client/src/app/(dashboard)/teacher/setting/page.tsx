@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import SharedNotificationSettings from '@/components/SharedNotificationSettings'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Teacher Settings",
+};
 
 const TeacherSettings = () => {
   return (

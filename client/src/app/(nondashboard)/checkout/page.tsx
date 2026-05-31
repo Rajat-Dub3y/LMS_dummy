@@ -1,5 +1,6 @@
 "use client"
 
+import type { Metadata } from "next";
 import React from 'react'
 import Loading from '@/components/Loading'
 import { useUser } from '@clerk/nextjs'
@@ -8,6 +9,10 @@ import { useCheckoutNavigation } from '@/hooks/useCheckoutNavigation';
 import CheckoutDetailsPage from './details';
 import PaymentPage from './payment';
 import CompletionPage from "./completion/index"
+
+export const metadata: Metadata = {
+  title: "Checkout",
+};
 
 const CheckOutWizard = () => {
 

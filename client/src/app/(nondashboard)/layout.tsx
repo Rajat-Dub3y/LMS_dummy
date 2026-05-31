@@ -8,7 +8,6 @@ export default function Layout({children}:{children:React.ReactNode}) {
       <main className="nondashboard-layout__main">
         {children}
       </main>
-      <h1>Hi</h1>
       <Footer/>
     </div>
   );

@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import NonDashboardNavbar from "@/components/NonDashBoardNavbar";
 import Landing from "@/app/(nondashboard)/landing/page";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 export default function Home() {
   return (
