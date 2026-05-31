@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { CustomFormField } from "@/components/CustomFormField";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
@@ -23,10 +22,6 @@ import { ArrowLeft, Plus } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-
-export const metadata: Metadata = {
-  title: "Edit Course",
-};
 import DroppableComponent from "./Droppable";
 import ChapterModal from "./ChapterModal";
 import SectionModal from "./SectionModal";

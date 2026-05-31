@@ -1,6 +1,5 @@
 "use client"
 
-import type { Metadata } from "next";
 import Loading from '@/components/Loading';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -8,10 +7,6 @@ import { formatPrice } from '@/lib/utils';
 import { useGetTransactionsQuery } from '@/state/api';
 import { useUser } from '@clerk/nextjs';
 import React, { useState } from 'react'
-
-export const metadata: Metadata = {
-  title: "User Billing",
-};
 
 const UserBilling = () => {
 

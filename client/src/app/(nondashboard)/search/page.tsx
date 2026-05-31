@@ -1,18 +1,12 @@
 "use client"
 
-import type { Metadata } from "next";
 import Loading from "@/components/Loading";
 import { useGetCoursesQuery } from "@/state/api"
 import { useRouter, useSearchParams } from "next/navigation"
 import {useEffect,useState} from "react"
 import { motion } from "framer-motion";
 import CourseCardSearch from "@/components/CourseCardSearch";
-
-export const metadata: Metadata = {
-  title: "Search Courses",
-};
 import SelectedCourse from "./SelectedCourse";
-
 
 const Search = () => {
 

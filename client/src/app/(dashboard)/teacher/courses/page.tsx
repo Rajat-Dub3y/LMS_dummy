@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Loading from "@/components/Loading";
 import TeacherCourseCard from "@/components/TeacherCourseCard";
@@ -14,10 +13,6 @@ import {
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import React, { useMemo, useState } from "react";
-
-export const metadata: Metadata = {
-  title: "Teacher Courses",
-};
 
 const Courses = () => {
   const router = useRouter();
