@@ -14,7 +14,7 @@ const NonDashBoardNavbar = () => {
     <nav className="nondashboard-navbar">
         <div className="nondashboard-navbar__container">
             <div className="nondashboard-navbar__search">
-                <Link href="/" className="nondashboard-navbar__brand">Rajat</Link>
+                <Link href="/" className="nondashboard-navbar__brand">Nil</Link>
                 <div className="flex items-center gap-4">
                     <div className="relative group">
                         <Link href="/search" scroll={false} className="nondashboard-navbar__search-input">
